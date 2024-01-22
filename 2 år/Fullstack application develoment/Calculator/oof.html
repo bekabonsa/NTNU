@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="calc-body">
+                <div id="display" class="display"></div>
+                <button onclick="calculate()" id="btn-equals" class="btn-equals">=</button>
+                <button onclick="number(`(`)" id="parantheses" class="parantheses-open">(</button>
+                <button onclick="number(`)`)" id="parantheses" class="parantheses-open">)</button>
+                <button onclick="number(`e`)" id="btn-nine" class="number btn-e">&escr;</button>
+                <button onclick="number(`pi`)" id="btn-nine" class="number btn-pie">&pi;</button>
+                <button onclick="number(`+`)" id="btn-plus" class="btn-plus">+</button>
+                <button onclick="number(`-`)" id="btn-minus" class="btn-minus">-</button>
+                <button onclick="number(`*`)" id="btn-times" class="btn-times">x</button>
+                <button onclick="number(`/`)" id="btn-divide" class="btn-divide">&#247</button>
+                <button onclick="reset()" id="btn-clear" class="btn-clear">C</button>
+                <button onclick="number(`DEL`)" id="btn-del" class="btn-del">DEL</button>
+                <button onclick="number(0)" id="btn-zero" class="number btn-zero" value="0">0</button>
+                <button onclick="number(1)" id="btn-one" class="number btn-one" value="1">1</button>
+                <button onclick="number(2)" id="btn-two" class="number btn-two" value="2">2</button>
+                <button onclick="number(3)" id="btn-three" class="number btn-three" value="0">3</button>
+                <button onclick="number(4)" id="btn-four" class="number btn-four" value="4">4</button>
+                <button onclick="number(5)" id="btn-five" class="number btn-five" value="5">5</button>
+                <button onclick="number(6)" id="btn-six" class="number btn-six" value="6">6</button>
+                <button onclick="number(7)" id="btn-seven" class="number btn-seven" value="7">7</button>
+                <button onclick="number(8)" id="btn-eight" class="number btn-eight" value="8">8</button>
+                <button onclick="number(9)" id="btn-nine" class="number btn-nine" value="9">9</button>
+                <button onclick="number(`.`)" id="btn-dot" class="btn-dot">.</button>
+                <button onclick="operation(`+/-`)" id="btn-pos-neg" class="btn-pos-neg value">+/-</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let numbers = document.querySelectorAll(".number")
+        let string = 0;
+        let displayE = document.querySelector(".display");
+
+
+        function number(n) {
+            //everything goes to string
+            string += n
+            console.log(string)
+        }
+
+        function operation(o) {
+            operator = o;
+            //pos neg before we calculate
+            if (operator == "+/-" && boolean === 0) {
+                negA += 1
+                console.log(negA, "negA")
+                if (negA % 2 == 0) {
+                    aString = aString.replace(`-`, ``)
+                    displayE.innerHTML = aString
+                } else {
+                    aString = `-` + aString
+                    displayE.innerHTML = aString
+                }
+            }
+            if (operator == "+/-" && boolean === -1) {
+                negB += 1
+                console.log(negB, "negB")
+                if (negB % 2 == 0) {
+                    bString = bString.replace(`-`, ``)
+                    displayE.innerHTML = bString
+                } else {
+                    bString = `-` + bString
+                    displayE.innerHTML = bString
+                }
+            }
+            let p = 0
+            // parantheses problem
+
+
+            //first operator click 
+            boolean = -1;
+            console.log(boolean, "boolean")
+
+        }
+
+
+        function calculate() {
+            //layE.innerHTML = parseFloat(string.replace(`+`, /+/))
+            //console.log(a,b)
+            displayE.innerHTML = `${eval(string)}`
+            console.log(string)
+        }
+
+        function reset() {
+            string = ""
+            displayE.innerHTML = 0;
+        }
+    </script>
+</body>
+
+</html>

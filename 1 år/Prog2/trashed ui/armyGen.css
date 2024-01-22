@@ -1,0 +1,87 @@
+.generateArmyBg{
+    -fx-background-image: url("https://www.artnews.com/wp-content/uploads/2013/04/0515.jpg");
+}
+
+.generateArmyBg .generateAndDisplay{
+    -fx-background-color: #28282B;
+}
+
+.label {
+    -fx-font-family: "Bookman Old Style";
+}
+
+context-menu {
+    -fx-background-color:  #28282B;
+    -fx-text-fill:  #28282B;
+}
+
+.menu-item .label {
+    -fx-text-fill: black;
+    -fx-font-size: 10pt;
+}
+
+.table-view{
+    -fx-background-radius: 7px 7px 7px 7px;
+}
+.table-view .label{
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+}
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to right, #fdbb2d, #fc802f);
+    -fx-background-radius: 7px 7px 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: linear-gradient(to top, #fdbb2d, #fc802f);
+    -fx-padding: 1px;
+}
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+.table-view {
+    -fx-accent:  lightblue;
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: transparent;
+}
+.context-menu{
+    -fx-accent: #58aed2;
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: transparent;
+}
+
+.table-view .cell{
+    -fx-cell-size: 35;
+    -fx-alignment: center;
+    /*-fx-background-color: #29292D;
+    -fx-border-color: #29292D;*/
+    -fx-text-fill: #29292D;
+}
+

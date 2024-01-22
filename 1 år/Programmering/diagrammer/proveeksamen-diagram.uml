@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/47973/OneDrive - NTNU/NTNU/Data Programmering/Programmering/ProveEksamen/Eksamen2019H</OriginalElement>
+  <nodes>
+    <node x="0.0" y="414.0">HearingAidCentral</node>
+    <node x="29.0" y="0.0">HearingAid</node>
+    <node x="9.5" y="652.0">Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="HearingAidCentral" target="HearingAid" relationship="DEPENDENCY">
+      <point x="-66.5" y="-94.0" />
+      <point x="66.5" y="389.0" />
+      <point x="81.0" y="389.0" />
+      <point x="-52.0" y="182.0" />
+    </edge>
+    <edge source="HearingAidCentral" target="HearingAid" relationship="TO_MANY">
+      <point x="66.5" y="-94.0" />
+      <point x="199.5" y="389.0" />
+      <point x="185.0" y="389.0" />
+      <point x="52.0" y="182.0" />
+    </edge>
+    <edge source="Client" target="HearingAidCentral" relationship="CREATE">
+      <point x="61.75" y="-105.0" />
+      <point x="194.75" y="627.0" />
+      <point x="199.5" y="627.0" />
+      <point x="66.5" y="94.0" />
+    </edge>
+    <edge source="Client" target="HearingAidCentral" relationship="TO_ONE">
+      <point x="-61.75" y="-105.0" />
+      <point x="71.25" y="627.0" />
+      <point x="66.5" y="627.0" />
+      <point x="-66.5" y="94.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.3585034013605441" showDependencies="true" x="158.91152648254882" y="454.0001190125996" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

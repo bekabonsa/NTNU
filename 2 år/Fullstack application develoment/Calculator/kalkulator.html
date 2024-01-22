@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+
+<body>
+    <div class="container" id="app">
+        
+        <div class="content">
+            
+            <div class="calc-body">
+                <div id="display" class="display"></div>
+                <button v-on:click="calculate()" id="btn-equals" class="btn-equals">=</button>
+                <button v-on:click="number(`(`)" id="parantheses" class="parantheses-open">(</button>
+                <button v-on:click="number(`)`)" id="parantheses" class="parantheses-close">)</button>
+                <button v-on:click="number(`+`)" id="btn-plus" class="btn-plus">&plus;</button>
+                <button v-on:click="number(`-`)" id="btn-minus" class="btn-minus">&minus;</button>
+                <button v-on:click="number(`*`)" id="btn-times" class="btn-times">&#215;</button>
+                <button v-on:click="number(`/`)" id="btn-divide" class="btn-divide">&divide;</button>
+                <button v-on:click="reset()" id="btn-clear" class="btn-clear">C</button>
+                <button v-on:click="number(`DEL`)" id="btn-del" class="btn-del">DEL</button>
+                <button v-on:click="number(0)" id="btn-zero" class="number btn-zero" value="0">0</button>
+                <button v-on:click="number(1)" id="btn-one" class="number btn-one" value="1">1</button>
+                <button v-on:click="number(2)" id="btn-two" class="number btn-two" value="2">2</button>
+                <button v-on:click="number(3)" id="btn-three" class="number btn-three" value="0">3</button>
+                <button v-on:click="number(4)" id="btn-four" class="number btn-four" value="4">4</button>
+                <button v-on:click="number(5)" id="btn-five" class="number btn-five" value="5">5</button>
+                <button v-on:click="number(6)" id="btn-six" class="number btn-six" value="6">6</button>
+                <button v-on:click="number(7)" id="btn-seven" class="number btn-seven" value="7">7</button>
+                <button v-on:click="number(8)" id="btn-eight" class="number btn-eight" value="8">8</button>
+                <button v-on:click="number(9)" id="btn-nine" class="number btn-nine" value="9">9</button>
+                <button v-on:click="number(`e`)" id="btn-nine" class="number btn-e">&escr;</button>
+                <button v-on:click="number(`pi`)" id="btn-nine" class="number btn-pie">&pi;</button>
+                <button v-on:click="number(`.`)" id="btn-dot" class="btn-dot">.</button>
+                <button v-on:click="number(`/100`)" id="btn-pos-neg" class="btn-pos-neg value">%</button>
+                <button v-on:click="number(`**`)" id="btn-inverse" class="btn-inverse value">x<sup>□</sup></button>
+            </div>
+        </div>
+        <div id="log">
+            <h1>logs</h1>
+            <p v-for="log in logs"><span v-if="displayed">{{ log }}</span></p>
+        </div>
+    </div>
+    <script src="./calculator.js"></script>
+    <script>
+      const mountedApp = app.mount('#app')
+    </script>
+   
+</body>
+
+</html>

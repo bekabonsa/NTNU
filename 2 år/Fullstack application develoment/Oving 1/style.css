@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+  --main-color:#fafafa;
+  --button-color: #4CAF50; /*#4CAF50*/
+  /*--button-color: #333;*/
+  --button-color-hover: #3e8e41;
+  /*--button-color-hover: #555;*/
+  --menu-color: #333;
+}
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+   }
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ p:not(footer p) {
+  padding: 5%;
+
+ }
+
+
+#logo{
+   height: 40px;
+   position: absolute;
+}
+
+#logodiv{
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+#logodiv, h1{
+    color: white;
+
+}
+
+#logodiv h1{
+    display: inline-block;
+    margin-left: 50px;
+    
+}
+
+#Menudiv > nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border: 1px solid var(--main-color);
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+  }
+
+.body{
+  text-align: center;
+}
+.body ul{
+display: inline-block;
+}
+
+
+.list{
+  padding: 5%;
+  padding-top: 0;
+}
+.list li{
+  background-color: rgb(8, 133, 236);
+  
+}
+ul li:not(#Menudiv > nav ul li) {
+    padding: 10px;
+    background-color: rgb(8, 133, 236);
+    
+}
+
+  /*cover*/
+  #cover{  
+  display: grid;
+  overflow: hidden;
+  background-image: url(/images/landscape.jpg);
+  background-size: cover;
+  place-items: center;
+  width: 100vw;
+  height: 35vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.cover-content:not(button){
+ font-size: 1000%;
+ text-shadow: 1px 1px 10px rgb(243, 227, 227);
+ -webkit-text-stroke: 5px #fff;
+}
+
+
+
+   /*body*/
+  #stomach{
+  text-align: center;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content;
+  background-color: var(--main-color);
+  }
+ 
+
+  .body{
+    padding: 10px;
+  }
+
+  li {
+    float: left;
+  }
+  
+  li a:not(.list li a) {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .list li a{
+    display: flexbox;
+    color: white;
+    padding: 5px;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover:not(.list li a) {
+    background-color: #111;
+  }
+
+  .body .img{
+    
+    max-width: 100%;
+    height: auto;
+    margin-left: -2px;
+  }
+
+  /*footer */
+  footer{
+    padding: 20px;
+    background-color: #333;
+    margin-top: auto;
+
+  }
+  footer p{
+    text-align: center;
+    color: white;
+  }
+
+  .img{
+  border: 5px dotted #333;
+  
+  }
+
+/* Style the button with a background color, text color, and padding */
+.cta-btn {
+  background-color: var(--button-color);
+  background-blend-mode: difference;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.555);
+  transition: all 0.3s ease-in-out;
+  width: 15%;
+}
+
+/* Style the button on hover */
+.cta-btn:hover {
+  background-color: var(--button-color-hover);
+  transform: translateY(-2px);
+  
+}
+
+/*mobile screens customization*/
+@media screen and (max-width: 1000px) {
+  /* CSS styles to apply when screen width is less than 480px */
+  body {
+    font-size: 16px;
+  }
+  /* Add your other styles here */
+  #stomach{
+    display: block;
+  }
+  #cover{
+    height: 65 vw; 
+  }
+
+  #displayed-num{
+    font-size: 6 em;
+  }
+  .cta-btn{
+    font-size: 1em;
+    padding: 5px;
+    width: 35vw;
+    min-width: 19px;
+  }
+
+}

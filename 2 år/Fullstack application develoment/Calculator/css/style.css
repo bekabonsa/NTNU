@@ -1,0 +1,204 @@
+/**** General ****/
+:root {
+    --bg-color: #082c5e;
+    --display-color: #428bf0;
+    --off-white: #e7f0fd;
+    --light-green: #55f670;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: "Open Sans";
+    color: var(--bg-color);
+    border-radius: 10px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+  }
+  
+  .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    min-width: 100vw;
+    font-size: 36px;
+  }
+  #log{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+  }
+  #log > h1{
+    padding: 5px;
+  }
+  #log > p{
+    background-color: white;
+  }
+  .calc-body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template: 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    max-height: 600px;
+    max-width: 450px;
+    padding: 17px;
+    border: 1px solid var(--off-white);
+    background: #04142f;
+  }
+  
+  .display {
+    grid-row: 1;
+    grid-column: 1 / 5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: var(--off-white);
+    background-color: var(--display-color);
+    margin-bottom: 10px;
+    border: 4px solid var(--off-white);
+  }
+  .display sub{
+    height: 4rem;
+    color: var(--off-white);
+  }
+.exponent {
+  font-size: smaller;
+  vertical-align: super;
+}
+
+  /**** Buttons ****/
+  button {
+    background-color: var(--off-white);
+    font-size: 2rem;  
+    border: none;
+    color: var(--bg-color);
+    text-decoration: none;
+  }
+  
+  button,
+  button:active{
+      outline: none;
+  }
+  
+  button:active {
+    background-color: var(--light-green);
+  }
+  .btn-equals:active {
+      background: #3df56b;
+  }
+  .btn-plus {
+  grid-row: 5;
+  grid-column: 4;
+
+}
+.btn-minus {
+    grid-row: 4;
+    grid-column: 4;
+  }
+  .btn-equals {
+    grid-row: 7;
+    grid-column: 4/5;
+    background: var(--light-green);
+  }
+ 
+  .parantheses {
+    grid-row: 6;
+    grid-column: 3/4;
+  }
+  .btn-times {
+    grid-row: 3;
+    grid-column: 4;
+  }
+  .btn-divide {
+    grid-row: 2;
+    grid-column: 4;
+  }
+  .btn-clear {
+    grid-row: 2;
+    grid-column: 1;
+    background: #e64f4c;
+    color: var(--off-white);
+  }
+  .btn-clear:active {
+    background: #df2320;
+  }
+  .btn-del {
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 1.5rem;
+  }
+  
+  .btn-dot {
+    grid-row: 6;
+    grid-column: 2;
+  }
+  
+  .btn-zero {
+    grid-row: 6;
+    grid-column: 1;
+  }
+  
+  .btn-one {
+    grid-row: 5;
+    grid-column: 1;
+  }
+  
+  .btn-two {
+    grid-row: 5;
+    grid-column: 2;
+  }
+  
+  .btn-three {
+    grid-row: 5;
+    grid-column: 3;
+  }
+  
+  .btn-four {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  
+  .btn-five {
+    grid-row: 4;
+    grid-column: 2;
+  }
+  
+  .btn-six {
+    grid-row: 4;
+    grid-column: 3;
+  }
+  
+  .btn-seven {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  
+  .btn-eight {
+    grid-row: 3;
+    grid-column: 2;
+  }
+  
+  .btn-nine {
+    grid-row: 3;
+    grid-column: 3;
+  }
+  
+  .btn-pos-neg {
+    grid-row: 2;
+    grid-column: 3;
+  }
+
+  @media screen and (max-width: 420px) , screen and (max-height: 420px) {
+
+.calc-body{
+    height: 60vh;
+}
+  }

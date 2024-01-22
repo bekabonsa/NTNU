@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_r7RjAIJyEey-94d8AeWxnw" name="lectures">
+    <eAnnotations xmi:id="_r-BVAIJyEey-94d8AeWxnw" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_r-BVAYJyEey-94d8AeWxnw" source="codegen">
+        <details xmi:id="_r-BVAoJyEey-94d8AeWxnw" key="codegenDirectory" value="/lectures/src/main/java"/>
+        <details xmi:id="_sE4K8IJyEey-94d8AeWxnw" key="AssociatedSourceCode" value="/lectures/src/main/java/inharitance/abstraction/triangle/EquilateralTriangle.java;2775091277/1;/lectures/src/main/java/inharitance/abstraction/triangle/IsoscelesTriangle.java;2189796140/1;/lectures/src/main/java/inharitance/abstraction/triangle/RightTriangle.java;3592823172/1;/lectures/src/main/java/inharitance/abstraction/triangle/Triangle.java;2395226108/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_sD56kIJyEey-94d8AeWxnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_sD6hoIJyEey-94d8AeWxnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_sD6hoYJyEey-94d8AeWxnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_sD6hooJyEey-94d8AeWxnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_sD6ho4JyEey-94d8AeWxnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_sD6hpIJyEey-94d8AeWxnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_sD6hpYJyEey-94d8AeWxnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_sD6hpoJyEey-94d8AeWxnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_sD7IsIJyEey-94d8AeWxnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_sDvigIJyEey-94d8AeWxnw" name="inharitance">
+      <packagedElement xmi:type="uml:Package" xmi:id="_sDvigYJyEey-94d8AeWxnw" name="abstraction">
+        <packagedElement xmi:type="uml:Package" xmi:id="_sDwJkIJyEey-94d8AeWxnw" name="triangle">
+          <packagedElement xmi:type="uml:Class" xmi:id="_sD5TgIJyEey-94d8AeWxnw" name="EquilateralTriangle">
+            <generalization xmi:id="_sEM1gIJyEey-94d8AeWxnw" general="_sEDEgIJyEey-94d8AeWxnw"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_sEPRwIJyEey-94d8AeWxnw" name="EquilateralTriangle" specification="_sD7IsYJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEPRwYJyEey-94d8AeWxnw" name="s">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sEPRwoJyEey-94d8AeWxnw" type="_sD5TgIJyEey-94d8AeWxnw" direction="return"/>
+              <language>java</language>
+              <body>super(s, s, s);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_sEPRw4JyEey-94d8AeWxnw" name="calcArea" specification="_sD7vwYJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEPRxIJyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return Math.round(Math.sqrt(3)/4*Math.pow(this.side1, 2));&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_sEPRxYJyEey-94d8AeWxnw" name="toString" specification="_sD894oJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEPRxoJyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return &quot;LikesidetTrekant [s=&quot;+this.side1+&quot;, getAreal()=&quot; + calcArea() + &quot;, getOmkrets()=&quot; + calcCircumference() + &quot;]&quot;;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_sD7IsYJyEey-94d8AeWxnw" name="EquilateralTriangle" method="_sEPRwIJyEey-94d8AeWxnw">
+              <eAnnotations xmi:id="_sD7Is4JyEey-94d8AeWxnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_sD7ItIJyEey-94d8AeWxnw" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_sD7IsoJyEey-94d8AeWxnw" name="s">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sD7vwIJyEey-94d8AeWxnw" type="_sD5TgIJyEey-94d8AeWxnw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_sD7vwYJyEey-94d8AeWxnw" name="calcArea" method="_sEPRw4JyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sD7vwoJyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_sD894oJyEey-94d8AeWxnw" name="toString" method="_sEPRxYJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sD8944JyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_sD-zEIJyEey-94d8AeWxnw" name="IsoscelesTriangle">
+            <generalization xmi:id="_sEM1gYJyEey-94d8AeWxnw" general="_sEDEgIJyEey-94d8AeWxnw"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_sEP40IJyEey-94d8AeWxnw" name="IsoscelesTriangle" specification="_sD-zEYJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEP40YJyEey-94d8AeWxnw" name="g">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sEP40oJyEey-94d8AeWxnw" name="s">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sEP404JyEey-94d8AeWxnw" type="_sD-zEIJyEey-94d8AeWxnw" direction="return"/>
+              <language>java</language>
+              <body>super(g, s, s);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_sEP41IJyEey-94d8AeWxnw" name="calcArea" specification="_sD_aIoJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEP41YJyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>double h=Math.sqrt(Math.pow(this.side2,2)-Math.pow(this.side1,2)/4);&#xD;
+		return Math.round(h*this.side1/4);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_sEP41oJyEey-94d8AeWxnw" name="toString" specification="_sEABMoJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEP414JyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return &quot;LikebenetTrekant [g=&quot;+this.side1+&quot;, s=&quot;+this.side2+&quot;, getAreal()=&quot; + calcArea() + &quot;, getOmkrets()=&quot; + calcCircumference() + &quot;]&quot;;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_sD-zEYJyEey-94d8AeWxnw" name="IsoscelesTriangle" method="_sEP40IJyEey-94d8AeWxnw">
+              <eAnnotations xmi:id="_sD-zFIJyEey-94d8AeWxnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_sD_aIIJyEey-94d8AeWxnw" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_sD-zEoJyEey-94d8AeWxnw" name="g">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sD-zE4JyEey-94d8AeWxnw" name="s">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sD_aIYJyEey-94d8AeWxnw" type="_sD-zEIJyEey-94d8AeWxnw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_sD_aIoJyEey-94d8AeWxnw" name="calcArea" method="_sEP41IJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sD_aI4JyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_sEABMoJyEey-94d8AeWxnw" name="toString" method="_sEP41oJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEABM4JyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_sEAoQIJyEey-94d8AeWxnw" name="RightTriangle">
+            <generalization xmi:id="_sEM1goJyEey-94d8AeWxnw" general="_sEDEgIJyEey-94d8AeWxnw"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_sEP42IJyEey-94d8AeWxnw" name="RightTriangle" specification="_sEBPUIJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEP42YJyEey-94d8AeWxnw" name="g">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sEP42oJyEey-94d8AeWxnw" name="h">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sEP424JyEey-94d8AeWxnw" type="_sEAoQIJyEey-94d8AeWxnw" direction="return"/>
+              <language>java</language>
+              <body>super(g, h, Math.sqrt(Math.pow(g, 2)+Math.pow(h, 2)));&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_sEP43IJyEey-94d8AeWxnw" name="calcArea" specification="_sEBPVoJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEP43YJyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return Math.round(this.side1*this.side2/2);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_sEP43oJyEey-94d8AeWxnw" name="toString" specification="_sEB2ZIJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEP434JyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return &quot;RettvinkletTrekant [g=&quot;+this.side1+&quot;, h=&quot;+this.side2+&quot;, getAreal()=&quot; + calcArea() + &quot;, getOmkrets()=&quot; + calcCircumference() + &quot;]&quot;;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_sEBPUIJyEey-94d8AeWxnw" name="RightTriangle" method="_sEP42IJyEey-94d8AeWxnw">
+              <eAnnotations xmi:id="_sEBPU4JyEey-94d8AeWxnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_sEBPVIJyEey-94d8AeWxnw" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_sEBPUYJyEey-94d8AeWxnw" name="g">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sEBPUoJyEey-94d8AeWxnw" name="h">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sEBPVYJyEey-94d8AeWxnw" type="_sEAoQIJyEey-94d8AeWxnw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_sEBPVoJyEey-94d8AeWxnw" name="calcArea" method="_sEP43IJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEB2YIJyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_sEB2ZIJyEey-94d8AeWxnw" name="toString" method="_sEP43oJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sECdcIJyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_sEDEgIJyEey-94d8AeWxnw" name="Triangle" isAbstract="true">
+            <ownedAttribute xmi:id="_sENckIJyEey-94d8AeWxnw" name="side1" visibility="protected" isLeaf="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_sERG8IJyEey-94d8AeWxnw" name="side2" visibility="protected">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_sERuAoJyEey-94d8AeWxnw" name="side3" visibility="protected">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_sEQf4IJyEey-94d8AeWxnw" name="Triangle" specification="_sEDrkIJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEQf4YJyEey-94d8AeWxnw" name="side1">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sEQf4oJyEey-94d8AeWxnw" name="side2">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sEQf44JyEey-94d8AeWxnw" name="side3">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sEQf5IJyEey-94d8AeWxnw" type="_sEDEgIJyEey-94d8AeWxnw" direction="return"/>
+              <language>java</language>
+              <body>this.side1=side1;&#xD;
+		this.side2=side2;&#xD;
+		this.side3=side3;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_sEQf5YJyEey-94d8AeWxnw" name="calcCircumference" specification="_sEESpYJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEQf5oJyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return this.side1+this.side2+this.side3;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_sEQf54JyEey-94d8AeWxnw" name="toString" specification="_sEE5sYJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEQf6IJyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return &quot;Trekant [side1=&quot; + side1 + &quot;, side2=&quot; + side2 + &quot;, side3=&quot; + side3 + &quot;]&quot;;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_sEDrkIJyEey-94d8AeWxnw" name="Triangle" method="_sEQf4IJyEey-94d8AeWxnw">
+              <eAnnotations xmi:id="_sEESoIJyEey-94d8AeWxnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_sEESoYJyEey-94d8AeWxnw" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_sEDrkYJyEey-94d8AeWxnw" name="side1">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sEDrkoJyEey-94d8AeWxnw" name="side2">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sEDrk4JyEey-94d8AeWxnw" name="side3">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_sEESooJyEey-94d8AeWxnw" type="_sEDEgIJyEey-94d8AeWxnw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_sEESo4JyEey-94d8AeWxnw" name="calcArea" isAbstract="true">
+              <ownedParameter xmi:id="_sEESpIJyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_sEESpYJyEey-94d8AeWxnw" name="calcCircumference" method="_sEQf5YJyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEE5sIJyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_sEE5sYJyEey-94d8AeWxnw" name="toString" method="_sEQf54JyEey-94d8AeWxnw">
+              <ownedParameter xmi:id="_sEE5soJyEey-94d8AeWxnw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_r-DxQIJyEey-94d8AeWxnw">
+      <eAnnotations xmi:id="_r-HboIJyEey-94d8AeWxnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_r-Ke8IJyEey-94d8AeWxnw" base_Package="_r7RjAIJyEey-94d8AeWxnw">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_sD8W0IJyEey-94d8AeWxnw" base_Element="_sD7vwYJyEey-94d8AeWxnw"/>
+  <UMLLabProfile:Annotations xmi:id="_sD894IJyEey-94d8AeWxnw" base_Element="_sD7vwYJyEey-94d8AeWxnw">
+    <annotations xmi:id="_sD894YJyEey-94d8AeWxnw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_sD9k8IJyEey-94d8AeWxnw" base_Element="_sD894oJyEey-94d8AeWxnw"/>
+  <UMLLabProfile:Annotations xmi:id="_sD-MAIJyEey-94d8AeWxnw" base_Element="_sD894oJyEey-94d8AeWxnw">
+    <annotations xmi:id="_sD-MAYJyEey-94d8AeWxnw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_sD_aJIJyEey-94d8AeWxnw" base_Element="_sD_aIoJyEey-94d8AeWxnw"/>
+  <UMLLabProfile:Annotations xmi:id="_sEABMIJyEey-94d8AeWxnw" base_Element="_sD_aIoJyEey-94d8AeWxnw">
+    <annotations xmi:id="_sEABMYJyEey-94d8AeWxnw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_sEABNIJyEey-94d8AeWxnw" base_Element="_sEABMoJyEey-94d8AeWxnw"/>
+  <UMLLabProfile:Annotations xmi:id="_sEABNYJyEey-94d8AeWxnw" base_Element="_sEABMoJyEey-94d8AeWxnw">
+    <annotations xmi:id="_sEABNoJyEey-94d8AeWxnw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_sEB2YYJyEey-94d8AeWxnw" base_Element="_sEBPVoJyEey-94d8AeWxnw"/>
+  <UMLLabProfile:Annotations xmi:id="_sEB2YoJyEey-94d8AeWxnw" base_Element="_sEBPVoJyEey-94d8AeWxnw">
+    <annotations xmi:id="_sEB2Y4JyEey-94d8AeWxnw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_sECdcYJyEey-94d8AeWxnw" base_Element="_sEB2ZIJyEey-94d8AeWxnw"/>
+  <UMLLabProfile:Annotations xmi:id="_sECdcoJyEey-94d8AeWxnw" base_Element="_sEB2ZIJyEey-94d8AeWxnw">
+    <annotations xmi:id="_sECdc4JyEey-94d8AeWxnw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_sEE5s4JyEey-94d8AeWxnw" base_Element="_sEE5sYJyEey-94d8AeWxnw"/>
+  <UMLLabProfile:Annotations xmi:id="_sEFgwIJyEey-94d8AeWxnw" base_Element="_sEE5sYJyEey-94d8AeWxnw">
+    <annotations xmi:id="_sEFgwYJyEey-94d8AeWxnw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:MultiDeclaration xmi:id="_sEODoIJyEey-94d8AeWxnw" base_Property="_sENckIJyEey-94d8AeWxnw" siblings="_sERG8IJyEey-94d8AeWxnw _sERuAoJyEey-94d8AeWxnw" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_sEODoYJyEey-94d8AeWxnw" base_Element="_sENckIJyEey-94d8AeWxnw"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_sERuAIJyEey-94d8AeWxnw" base_Property="_sERG8IJyEey-94d8AeWxnw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_sERuAYJyEey-94d8AeWxnw" base_Element="_sERG8IJyEey-94d8AeWxnw"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_sESVEIJyEey-94d8AeWxnw" base_Property="_sERuAoJyEey-94d8AeWxnw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_sESVEYJyEey-94d8AeWxnw" base_Element="_sERuAoJyEey-94d8AeWxnw"/>
+</xmi:XMI>

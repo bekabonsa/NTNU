@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Klasse-livecoding" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/brok" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/oving5op2-random" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/terningspill" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/valuta-selv" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
