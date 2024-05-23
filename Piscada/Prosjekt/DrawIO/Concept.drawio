@@ -1,0 +1,43 @@
+<mxfile host="Electron" modified="2024-03-15T09:03:07.975Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="gBd42X0dG3jYYcqrMd9q" version="23.1.5" type="device">
+  <diagram name="Page-1" id="Mktvb-7SCbU9MKrb1aWT">
+    <mxGraphModel dx="460" dy="269" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jxy_Zk34LoxT0NVZkvE3-1" value="&lt;font color=&quot;#ffffff&quot;&gt;Post processing&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=#182E3E;strokeColor=#FFFFFF;fontColor=#FFFFFF;glass=0;shadow=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="270" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="jxy_Zk34LoxT0NVZkvE3-3" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;endWidth=1.7391304347826089;endSize=2.2608695652173916;labelBackgroundColor=none;fontColor=default;strokeColor=#23445D;shadow=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="230" as="sourcePoint" />
+            <mxPoint x="390" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jxy_Zk34LoxT0NVZkvE3-4" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;endWidth=1.7391304347826089;endSize=2.2608695652173916;labelBackgroundColor=none;fontColor=default;strokeColor=#23445D;shadow=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="230" as="sourcePoint" />
+            <mxPoint x="425" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jxy_Zk34LoxT0NVZkvE3-7" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;endWidth=1.7391304347826089;endSize=2.2608695652173916;labelBackgroundColor=none;fontColor=default;strokeColor=#23445D;shadow=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="230" as="sourcePoint" />
+            <mxPoint x="460" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jxy_Zk34LoxT0NVZkvE3-10" value="Industrial IoT data" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#182E3E;strokeColor=#FFFFFF;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="365" y="190" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jxy_Zk34LoxT0NVZkvE3-11" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;endWidth=1.7391304347826089;endSize=2.2608695652173916;labelBackgroundColor=none;fontColor=default;strokeColor=#23445D;shadow=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="380" as="sourcePoint" />
+            <mxPoint x="425" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jxy_Zk34LoxT0NVZkvE3-12" value="Result" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#182E3E;strokeColor=#FFFFFF;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="390" y="420" width="70" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

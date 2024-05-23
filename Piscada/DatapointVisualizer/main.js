@@ -1,7 +1,7 @@
 let node_id;
 let runData;
 
-/** const postNodeAndRun = async () => {
+ const postNodeAndRun = async () => {
   const url = 'http://localhost:8000/nodes/node'; // Base URL for posting a new node
   const requestBody = {
     "config": {
@@ -10,13 +10,20 @@ let runData;
           "data_point_id": "c914fad0-4428-4268-9e33-1c21e345f4b9",
           "data_point_values": [],
           "variable": "A"
+        },
+
+        {
+          "data_point_id": "40dbf6bd-0719-4b0b-9f94-1e2787bd05cd",
+          "data_point_values": [],
+          "variable": "B"
         }
       ],
       "formula_settings": {
-        "formula": "Sum",
+        "formula": "Average",
         "approximation_settings": {
-          "series_approximation_method": "Linear interpolation",
-          "interpolation_seconds": 1
+          "interpolation_method": "Average in interval",
+          "interval_seconds": 1,
+          "average_interval": "1s"
         },
         "expression": "A",
         "output_format": "Time series"
@@ -26,7 +33,7 @@ let runData;
         "start_event_time": "2024-04-24T11:30:16.340Z",
         "end_event_time": "2024-04-24T11:30:55.340Z",
         "past_timeframe_seconds": 5,
-        "event_time": "2024-04-24T13:34:16.340Z"
+        "event_time": "2024-04-25T13:34:16.340Z"
       },
       "output": 0
     },
@@ -77,15 +84,17 @@ let runData;
 
 
 
-postNodeAndRun();
- **/
+postNodeAndRun().then(r => r);
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
   const drawChartBtn = document.getElementById('drawChartBtn');
 
+  console.log(new Date("2024-04-24T13:30:16.340000+02:00")); // Test date parsing directly
+
   drawChartBtn.addEventListener('click', () => {
-    const output_data =  [
+    let output_data =  [
       {
         "value": 18.931459114927343,
         "event_time": "2024-04-24T13:30:16.340000+02:00"
@@ -104,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     ];
 
-    const input_data =  [
+    let input_data_1 =  [
       {
         "value": 18.9349,
         "event_time": "2024-04-24T13:30:15.887000+02:00"
@@ -183,93 +192,73 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     ];
 
-    // Step 1: Merge and Sort Timestamps
-    const allTimestamps = [...output_data, ...input_data]
-        .map(data => data.event_time)
-        .filter((value, index, self) => self.indexOf(value) === index)
-        .sort((a, b) => new Date(a) - new Date(b));
 
-    // Step 2: Prepare Data for Plotting
-    const outputValues = allTimestamps.map(timestamp => {
-      const found = output_data.find(data => data.event_time === timestamp);
-      return found ? found.value : null;
-    });
+    output_data = runData.result.config.output;
+    input_data_1 = runData.result.config.inputs[0].data_point_values;
+    let input_data_2 = runData.result.config.inputs[1].data_point_values;
+    console.log(input_data_1)
 
-    const inputValues = allTimestamps.map(timestamp => {
-      const found = input_data.find(data => data.event_time === timestamp);
-      return found ? found.value : null;
-    });
+    const parseData = (data) => data.map(item => ({
+      x: new Date(item.event_time),
+      y: item.value
+    }));
 
-    const labels = allTimestamps.map(timestamp => new Date(timestamp).toLocaleString());
-
-    const processedOutputValues = [];
-    let lastOutputValue = null;
-    allTimestamps.forEach(timestamp => {
-      const found = output_data.find(data => data.event_time === timestamp);
-      if (found) {
-        lastOutputValue = found.value;
-      }
-      processedOutputValues.push(lastOutputValue);
-    });
-
-    // Process the input_data similarly
-    const processedInputValues = [];
-    let lastInputValue = null;
-    allTimestamps.forEach(timestamp => {
-      const found = input_data.find(data => data.event_time === timestamp);
-      if (found) {
-        lastInputValue = found.value;
-      }
-      processedInputValues.push(lastInputValue);
-    });
+    console.log(new Date(output_data[0].event_time)); // Check if dates are parsed correctly
 
 
+    const outputDataPoints = parseData(output_data);
+    const inputDataPoints = parseData(input_data_1);
+    const inputDataPoints_2 = parseData(input_data_2);
 
-    // Step 3: Plot Using Chart.js
+
+    const data = {
+      datasets: [{
+        label: 'Output Data',
+        backgroundColor: transparentize('#FF6384', 0.5), // Using the custom transparentize function
+        borderColor: '#FF6384',
+        fill: false,
+        data: outputDataPoints,
+      }, {
+        label: 'Input Data',
+        backgroundColor: transparentize('#36A2EB', 0.5),
+        borderColor: '#36A2EB',
+        fill: false,
+        data: inputDataPoints,
+      },
+        {
+          label: 'Input Data 2',
+          backgroundColor: transparentize('#34e720', 0.5),
+          borderColor: '#49e312',
+          fill: false,
+          data: inputDataPoints_2,
+        },
+      ]
+    };
+
+
+
+
     const ctx = document.getElementById('myChart').getContext('2d');
     const config = {
       type: 'line',
-      data: {
-        labels: labels,
-        datasets: [
-      {
-        label: 'Output Data',
-        data: processedOutputValues,
-          backgroundColor: 'rgba(0, 123, 255, 0.5)',
-          borderColor: 'rgba(0, 123, 255, 1)',
-          borderWidth: 2,
-          pointRadius: 3,
-          pointHoverRadius: 6,
-          fill: false
-        }, {
-            label: 'Input Data',
-            data: processedInputValues,
-          backgroundColor: 'rgba(255, 99, 132, 0.5)',
-          borderColor: 'rgba(255, 99, 132, 1)',
-          borderWidth: 2,
-          pointRadius: 3,
-          pointHoverRadius: 6,
-          fill: false
-        }]
-      },
+      data: data,
       options: {
-        responsive: true,
-        maintainAspectRatio: false,
         scales: {
           x: {
             type: 'time',
             time: {
               unit: 'second',
-              tooltipFormat: 'MMM D, h:mm:ss a',
+              tooltipFormat: 'MMM d, h:mm:ss a', // changed 'D' to 'd',
               displayFormats: {
-                second: 'h:mm:ss a'
+                second: 'MMM d, h:mm:ss a' // changed 'D' to 'd'
               }
             },
             title: {
               display: true,
               text: 'Event Time'
             }
-          },
+          }
+          ,
           y: {
             beginAtZero: false,
             title: {
@@ -284,20 +273,33 @@ document.addEventListener('DOMContentLoaded', () => {
           },
           title: {
             display: true,
-            text: 'Data Points Over Time'
+            text: 'Comparison of Input and Output Data Over Time'
           }
-        },
-        interaction: {
-          intersect: false,
-          mode: 'index',
         }
       }
     };
 
+    // Initializing the chart
     if (window.myChart instanceof Chart) {
       window.myChart.destroy();
     }
-
     window.myChart = new Chart(ctx, config);
   });
 });
+
+
+function transparentize(color, opacity) {
+  let alpha = 1 - opacity;
+  return `rgba(${parseInt(color.slice(1, 3), 16)}, ${parseInt(color.slice(3, 5), 16)}, ${parseInt(color.slice(5, 7), 16)}, ${alpha})`;
+}
+
+function newDate(days) {
+  let date = new Date();
+  date.setDate(date.getDate() + days);
+  return date;
+}
+
+function newDateString(days) {
+  return newDate(days).toISOString();
+}
+
