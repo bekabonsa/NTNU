@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<decision id="Transportation_method">
+			<state id="Walk" />
+			<state id="b_7_42" />
+			<state id="b_08_02" />
+		</decision>
+		<cpt id="traffic_delay">
+			<state id="No_delay" />
+			<state id="Short_delay" />
+			<state id="Long_delay" />
+			<parents>Transportation_method</parents>
+			<probabilities>0 0 1 0.1 0.2 0.7 0.7 0.2 0.1</probabilities>
+		</cpt>
+		<cpt id="weather_condition">
+			<state id="Rainy" />
+			<state id="Sunny" />
+			<state id="Icy" />
+			<state id="WindyORcold" />
+			<parents>Transportation_method</parents>
+			<probabilities>0 1 0 0 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="travel_time_for_arrival">
+			<state id="Early_arrival" />
+			<state id="Just_in_time" />
+			<state id="Late_arrival" />
+			<parents>Transportation_method</parents>
+			<probabilities>0.6 0.3 0.1 1 0 0 0 0.8 0.2</probabilities>
+		</cpt>
+		<cpt id="mood">
+			<state id="Energetic" />
+			<state id="Happy" />
+			<state id="Groggy" />
+			<parents>Transportation_method</parents>
+			<probabilities>0.8 0.2 0 0.1 0.3 0.6 0.1 0.3 0.6</probabilities>
+		</cpt>
+		<cpt id="Day_of_the_week">
+			<state id="Wednesday" />
+			<state id="Weekday" />
+			<state id="Weekend" />
+			<parents>Transportation_method</parents>
+			<probabilities>0.05 0.45 0.5 0.8 0.1 0.1 0.2 0.4 0.4</probabilities>
+		</cpt>
+		<utility id="U_traveltiem">
+			<parents>traffic_delay weather_condition Day_of_the_week</parents>
+			<utilities>100 80 50 100 100 90 100 80 50 100 90 40 90 80 30 50 80 90 20 50 30 30 40 40 -100 -70 -25 -90 -60 -5 -100 -90 -50 -100 -80 -100</utilities>
+		</utility>
+		<utility id="Copy_of_U_traveltiem">
+			<parents>mood traffic_delay travel_time_for_arrival</parents>
+			<utilities>100 90 -100 90 80 -80 80 60 -70 100 100 -95 95 80 -90 90 70 -65 80 100 -100 80 100 -100 80 100 -100</utilities>
+		</utility>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 5.0.4830.0 ACADEMIC" name="Network1">
+			<node id="Transportation_method">
+				<name>Transportation method</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>461 46 579 108</position>
+			</node>
+			<node id="traffic_delay">
+				<name>Traffic delay</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>614 247 691 309</position>
+			</node>
+			<node id="weather_condition">
+				<name>weather condition</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>347 253 424 315</position>
+			</node>
+			<node id="travel_time_for_arrival">
+				<name>arrival time</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>731 249 808 311</position>
+			</node>
+			<node id="mood">
+				<name>mood</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>871 247 948 309</position>
+			</node>
+			<node id="U_traveltiem">
+				<name>Travel Time Utility</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>465 450 550 482</position>
+			</node>
+			<node id="Copy_of_U_traveltiem">
+				<name>Comfort Utility</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>724 446 796 478</position>
+			</node>
+			<node id="Day_of_the_week">
+				<name>Day of the week</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>474 257 565 313</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

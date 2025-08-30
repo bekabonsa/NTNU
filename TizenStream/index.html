@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKV Torrent Video Streamer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MKV Torrent Video Streamer with VLC.js</h1>
+        <div class="input-container">
+            <label for="magnet-link">Enter Magnet Link:</label>
+            <input type="text" id="magnet-link" placeholder="Paste your magnet link here">
+            <button id="stream-button">Stream</button>
+        </div>
+        <div id="player-container">
+            <div id="vlc-player"></div>
+        </div>
+    </div>
+    <script src="libs/webtorrent.min.js"></script>
+    <script src="libs/vlc.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
